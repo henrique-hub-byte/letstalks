@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>guia do programador</h1>
+    <img src="/img/images.jpg" alt="">
+    <p> <%= nome %> </p>
+    <p>  <%= lang %> </p>
+    <p> <%= empresa %> </p>
+    <p>  <%= inscritos %> </p>
+
+    <% if(msg == true) { %>
+        <h3>isso é uma msg de erro</h3>
+    <% }else { %>
+        <h3>nenhum erro</h3>
+    <% } %>
+
+    <% produtos.forEach(function(produto) { %>
+        <p> <%= produto.nome %> 
+         <%= produto.preco %> </p>
+    <% }) %>
+
+    <p> <%= outro %> </p> 
+</body>
+</html>
